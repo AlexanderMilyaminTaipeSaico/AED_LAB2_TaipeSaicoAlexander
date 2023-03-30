@@ -14,7 +14,7 @@ class DemoMetodoGenerico {
         //entonces los array son diferentes
         if (x.length != y.length)
             return false;
-        for (int i = 0; 1 < x.length; i++)
+        for (int i = 0; i < x.length; i++)
             if(!x[i].equals(y[i]))
                 return false; //arrays diferentes
         return true; //Contenido de arrays son equivalentes
@@ -34,8 +34,16 @@ class DemoMetodoGenerico {
             System.out.println("nums es igual a nums4");
         
         //Crea un array de double;                            //A
-        double dvals[] = {1,1,2,2,3,3,4,4,5,5};           //B
-        if (igualArrays(nums, dvals))                  
+        Double dvals[] = {1.1,2.2,3.3,4.4,5.5};           //B
+        /*if (igualArrays(nums,dvals))
+        La línea de código if (igualArrays(nums, dvals)) 
+        da error porque dvals es un array de tipo double, 
+        mientras que nums es un array de tipo Integer. El 
+        método igualArrays está definido para comparar arrays 
+        de tipo T que extiendan la clase Comparable<T>, lo que 
+        significa que los elementos en el array deben ser comparables 
+        entre sí. 
+        */                  
           System.out.println("nums es igual a dvals");    //D
     }
     

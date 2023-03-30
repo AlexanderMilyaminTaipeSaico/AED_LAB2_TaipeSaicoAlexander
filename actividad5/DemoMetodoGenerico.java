@@ -14,7 +14,7 @@ class DemoMetodoGenerico {
         //entonces los array son diferentes
         if (x.length != y.length)
             return false;
-        for (int i = 0; 1 < x.length; i++)
+        for (int i = 0; i < x.length; i++)
             if(!x[i].equals(y[i]))
                 return false; //arrays diferentes
         return true; //Contenido de arrays son equivalentes
@@ -34,7 +34,7 @@ class DemoMetodoGenerico {
             System.out.println("nums es igual a nums4");
         
         //Crea un array de double;                           //A
-        //double dvals[] = {1,1,2,2,3,3,4,4,5,5};           //B
+        //Double dvals[] = {1,1,2,2,3,3,4,4,5,5};           //B
         //if (igualArrays(nums, dvals))                  
         //  System.out.println("nums es igual a dvals");    //D
     }
